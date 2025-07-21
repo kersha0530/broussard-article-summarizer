@@ -32,14 +32,14 @@ This project uses Python, BeautifulSoup, spaCy, and spaCyTextBlob to mine a heal
 - Determined overall sentiment and compared summary sentiment to the original
 
 ## 📸 Screenshots
-*(Insert notebook screenshots here showing outputs from Q2–Q13)*
+
 
 ## 🧠 Reflections
 I gained hands-on experience combining web scraping and NLP to generate structured insights from unstructured text. It was rewarding to see how sentiment and frequency analytics can highlight core ideas and tone from lengthy content.
 
 ## 🔗 Links
 - [GitHub Repo](<https://github.com/kersha0530/broussard-article-summarizer/tree/main>)
-- [Notebook File](<INSERT NOTEBOOK LINK>)
+- [Notebook File](<https://github.com/kersha0530/broussard-article-summarizer/blob/main/broussard-article-summarizer.ipynb>)
 
 # Final Project: Article Summarizer
 
