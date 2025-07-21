@@ -1,3 +1,46 @@
+# Final Project: Mental Health Article Summarizer
+
+**Course**: Web Mining & Applied NLP (44-620)  
+**Student**: Kersha Broussard  
+**Project**: Custom Article Summarizer using NLP and Web Scraping  
+**Article Analyzed**: [US News - Mental Health](https://health.usnews.com/conditions/mental-health)
+
+## 🧠 Project Overview
+This project uses Python, BeautifulSoup, spaCy, and spaCyTextBlob to mine a health-related article for:
+- Most common words and ideas
+- Sentiment (polarity) of the content
+- Visualization of sentence relevance scores
+- A generated summary using both token and lemma importance
+
+## 💻 Technologies Used
+- Requests & BeautifulSoup for web scraping
+- spaCy & spaCyTextBlob for NLP and sentiment analysis
+- Matplotlib for visualizations
+- Jupyter Notebook in a virtual environment
+
+## 🎯 Project Goals
+- Extract article HTML and convert to plain text
+- Perform polarity sentiment analysis
+- Find top 5 frequent tokens and lemmas
+- Score each sentence using these
+- Visualize score distributions with histograms
+- Build a concise summary using cutoff thresholds
+
+## ✅ Key Results
+- Generated a summary that captured the essence of the article
+- Found the most relevant content using word and idea frequency
+- Determined overall sentiment and compared summary sentiment to the original
+
+## 📸 Screenshots
+*(Insert notebook screenshots here showing outputs from Q2–Q13)*
+
+## 🧠 Reflections
+I gained hands-on experience combining web scraping and NLP to generate structured insights from unstructured text. It was rewarding to see how sentiment and frequency analytics can highlight core ideas and tone from lengthy content.
+
+## 🔗 Links
+- [GitHub Repo](<https://github.com/kersha0530/broussard-article-summarizer/tree/main>)
+- [Notebook File](<INSERT NOTEBOOK LINK>)
+
 # Final Project: Article Summarizer
 
 Complete the tasks in the Python Notebook in this repository.
