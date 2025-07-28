@@ -3,39 +3,59 @@
 **Course**: Web Mining & Applied NLP (44-620)  
 **Student**: Kersha Broussard  
 **Project**: Custom Article Summarizer using NLP and Web Scraping  
-**Article Analyzed**: [US News - Mental Health](https://health.usnews.com/conditions/mental-health)
+**Article Analyzed**: [Mental Health](https://en.wikipedia.org/wiki/Mental_health)
 
 ## 🧠 Project Overview
-This project uses Python, BeautifulSoup, spaCy, and spaCyTextBlob to mine a health-related article for:
+This project focuses on web mining and natural language processing (NLP) techniques and uses Python, BeautifulSoup, spaCy, and spaCyTextBlob to mine/summarize a Wikipedia article on **Mental Health**. The process combines sentiment analysis, token/lemma frequency extraction, and intelligent sentence scoring to produce two versions of a text summary. 
 - Most common words and ideas
 - Sentiment (polarity) of the content
 - Visualization of sentence relevance scores
 - A generated summary using both token and lemma importance
 
-## 💻 Technologies Used
-- Requests & BeautifulSoup for web scraping
-- spaCy & spaCyTextBlob for NLP and sentiment analysis
-- Matplotlib for visualizations
-- Jupyter Notebook in a virtual environment
 
-## 🎯 Project Goals
-- Extract article HTML and convert to plain text
-- Perform polarity sentiment analysis
-- Find top 5 frequent tokens and lemmas
-- Score each sentence using these
-- Visualize score distributions with histograms
-- Build a concise summary using cutoff thresholds
+## 🛠 Tools & Libraries Used
+- `requests`, `pickle` for HTML retrieval and storage
+- `BeautifulSoup` for HTML parsing
+- `spaCy` for NLP processing (tokenization, lemmatization, POS tagging)
+- `TextBlob` for sentiment analysis
+- `matplotlib` for histogram visualizations
 
-## ✅ Key Results
-- Generated a summary that captured the essence of the article
-- Found the most relevant content using word and idea frequency
-- Determined overall sentiment and compared summary sentiment to the original
+## 🔍 Project Steps
+1. **Web Scraping**: Fetched and saved the HTML from the Wikipedia article.
+2. **Sentiment Analysis**: Used `TextBlob` to analyze polarity and subjectivity.
+3. **spaCy Token & Lemma Frequency**: Identified the 5 most frequent tokens and lemmas (filtered and lowercased).
+4. **Sentence Scoring**: Each sentence was scored by its frequency of interesting tokens/lemmas.
+5. **Histograms**: Visualized token- and lemma-based sentence scores.
+6. **Summary Generation**: Created two summaries (token-based and lemma-based) using a cutoff score.
 
-## 📸 Screenshots
+## 📊 Summary Stats
+- **Original Article Sentence Count**: 387
+- **Token Summary Sentence Count**: 53  
+  - Polarity Score: `0.00097`
+- **Lemma Summary Sentence Count**: 53  
+  - Polarity Score: `0.00439`
 
+## 💡 Insights
+- Most frequent tokens and lemmas highlighted recurring themes in the article.
+- The summaries maintained the original sentence order and retained important information.
+- Lemma-based scoring slightly outperformed token-based in terms of polarity.
 
-## 🧠 Reflections
-I gained hands-on experience combining web scraping and NLP to generate structured insights from unstructured text. It was rewarding to see how sentiment and frequency analytics can highlight core ideas and tone from lengthy content.
+## 📁 Files Included
+- `mental_health_article.pkl` – HTML source
+- `article_summarizer.ipynb` – Full notebook with analysis, visualizations, and summaries
+- Summary plots: token-based and lemma-based histograms
+
+## 🏁 Skills Demonstrated
+- Web scraping
+- Sentiment analysis
+- spaCy NLP techniques
+- Data visualization
+- Text summarization with sentence filtering
+
+## 👩🏽‍🎓 Student
+Kersha Broussard  
+Course: Web Mining & Applied NLP (44-620)
+
 
 ## 🔗 Links
 - [GitHub Repo](<https://github.com/kersha0530/broussard-article-summarizer/tree/main>)
